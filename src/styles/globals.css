@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* styles/globals.css or create a separate Header.module.css */
+header {
+  background-color: rgb(210, 255, 255);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: rgb(34, 33, 33);
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: rgb(0, 148, 148);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* styles/Footer.module.css */
+footer {
+  background-color: #171717;
+  padding: 1rem;
+  text-align: center;
+}
+/* styles/Tabs.css */
+.tabs {
+  width: auto;
+}
+
+.tab-list {
+  /* display: flex; */
+  /* border: 1px solid #ddd; */
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  border-top-right-radius: 0.5rem;
+  color: black;
+}
+
+.tab.active {
+  border: 1px solid white;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border-top-left-radius: 0.5rem; /* 8px */
+  border-top-right-radius: 0.5rem; /* 8px */
+}
+
+.tab-content {
+  background-color: white;
+  border-top-right-radius: 0.5rem; /* 8px */
+  border-bottom-right-radius: 0.5rem; /* 8px */
+  border-bottom-left-radius: 0.5rem; /* 8px */
+  padding: 8px;
+}
+
+/* // Trong file CSS hoặc module CSS của bạn */
+
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin-right: 5px;
+}
+
+.pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 4px;
+}
