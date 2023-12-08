@@ -1,10 +1,7 @@
 // components/Header.js
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Header.module.css";
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import MenuButton from "./MenuButton";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -15,19 +12,20 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className="">
       <div className="container flex justify-between items-center ">
         <nav className="w-full ">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:px-8">
             <div>
               <div className="grid grid-cols-4 gap-4 items-center justify-between py-3 md:py-5 ">
                 <div className="w-max ">
-                  <Image
+                  <Link href='/'>                 <Image
                     src="/logo-text.png"
                     alt="My Image"
                     width={150}
                     height={100}
-                  />
+                  /></Link>
+ 
                 </div>
                 <div className="col-span-2 ">
                   <ul className="xl:flex hidden sm:hidden justify-evenly wrap ">

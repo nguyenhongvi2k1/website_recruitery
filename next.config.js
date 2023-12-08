@@ -3,7 +3,9 @@ const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
     images: {
-      domains: ['images.unsplash.com', 'res.cloudinary.com', 'localhost']
+      domains: ['images.unsplash.com', 'res.cloudinary.com', 'localhost',
+      'insieutoc.vn','png.pngtree.com', 'logoart.vn', 'iweb.tatthanh.com.vn', 'gudlogo.com',
+    'adtimin.vn','cdn.pixabay.com', 'www.vietnamworks.com']
     },
     experimental: {
       newNextLinkBehavior: true
